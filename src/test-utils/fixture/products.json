@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "id": "045019bb-06fc-4fa1-b703-318725b4d8af",
+      "displayId": "045019bb",
+      "createdAt": "2019-02-21T11:01:45.209Z",
+      "updatedAt": "2022-05-03T13:21:19.407242Z",
+      "createdBy": null,
+      "updatedBy": null,
+      "name": "oneatlas-spot-aoiclipped",
+      "displayName": "SPOT 6/7 Display (Streaming)",
+      "description": "SPOT imagery in GeoTIFF format. RGB and panchromatic (1.5 m) bands.",
+      "provider": "OneAtlas",
+      "type": "DATA",
+      "metadata": {
+        "blockThumbnailUrl": "https://metadata.up42.com/045019bb-06fc-4fa1-b703-318725b4d8af/0_SPOT_6-7_Avatar1612547996375.jpg",
+        "pricingStrategy": {
+          "type": "TILE_OUTPUT",
+          "credits": 3
+        },
+        "blockPricingStrategy": {
+          "name": "simple",
+          "unit": "TILE",
+          "direction": "OUTPUT",
+          "credits": 3
+        }
+      },
+      "version": "2.1.22",
+      "isPublic": true,
+      "isValid": true,
+      "isRestricted": false,
+      "isAccessGranted": true,
+      "isCreditPurchaseRequired": true,
+      "tags": [
+        "Maritime",
+        "Oil, Gas, Minerals, and Energy",
+        "Optical",
+        "Transportation",
+        "Infrastructure and Utilities",
+        "Satellite",
+        "Insurance and Financial Services",
+        "Environmental Protection",
+        "Global",
+        "Land Use and Management",
+        "High Revisit",
+        "Real Estate",
+        "Agriculture"
+      ],
+      "isPublicVersion": true,
+      "manifestVersion": 2
+    }
+  ]
+}
