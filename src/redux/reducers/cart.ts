@@ -19,10 +19,10 @@ const isSameId = (cartProductDetails: CartProductDetails, payload: Product) =>
   cartProductDetails.product.id === payload.id;
 
 const getCredits = (cartProductDetails: CartProductDetails) => {
-  return cartProductDetails?.product?.metadata?.pricingStrategy?.credits || 0;
+  return cartProductDetails?.product?.metadata?.blockPricingStrategy?.credits || 0;
 };
 
-const getCreditsFromProduct = (product: Product) => product?.metadata?.pricingStrategy?.credits || 0;
+const getCreditsFromProduct = (product: Product) => product?.metadata?.blockPricingStrategy?.credits || 0;
 
 const calculateTotalCredits = (products: CartProductDetails[]) =>
   products.map((product) => getCredits(product) * product.quantity).reduce((prev, curr) => prev + curr, 0) || 0;

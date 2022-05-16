@@ -40,7 +40,7 @@ describe('app', () => {
     // arrange
     renderApp();
     const [firstProduct] = sampleData.data as unknown as Product[];
-    const credits = firstProduct.metadata.pricingStrategy.credits;
+    const credits = firstProduct.metadata.blockPricingStrategy.credits;
 
     // act
     await waitFor(() => screen.findByTestId(/product-container/));

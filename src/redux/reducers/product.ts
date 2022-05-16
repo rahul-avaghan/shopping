@@ -11,13 +11,15 @@ const initialState: ProductState = {
   loading: true,
 };
 
+// can be stored in .env file.
 export const PRODUCTS_ENDPOINT = 'https://api.up42.com/marketplace/blocks';
 export const fetchProducts = createAsyncThunk('users/fetchByIdStatus', async (_, { rejectWithValue }) => {
   try {
     const response = await fetch(PRODUCTS_ENDPOINT);
     if (response.ok) {
       const json = await response.json();
-      return json.data;
+      const products = json.data;
+      return products?.filter((product: Product) => product.metadata.blockPricingStrategy.name === 'simple') || [];
     }
   } catch (error) {
     rejectWithValue('Failed to fetch product information.');
